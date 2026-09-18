@@ -1,0 +1,39 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
+
+function Hero() {
+    const navigate = useNavigate();
+
+    function handlesignup() {
+        navigate("/signup");
+    }
+
+    return (
+        <div className="container p-5">
+            <div className="row text-center">
+            <img
+    src="/media/homeHero.png"
+    alt="Hero Image"
+    className="mt-5"
+/>
+
+                <h1 className="mt-5">Invest in everything</h1>
+
+                <p>
+                    Online platform to invest in stocks, derivatives,
+                    mutual funds, and more
+                </p>
+
+                <button
+                    className="p-3 btn btn-primary"
+                    style={{ width: "10%", margin: "0 auto" }}
+                    onClick={handlesignup}
+                >
+                    Signup Now
+                </button>
+            </div>
+        </div>
+    );
+}
+
+export default Hero;

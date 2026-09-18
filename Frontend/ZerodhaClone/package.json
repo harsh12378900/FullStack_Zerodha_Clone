@@ -1,0 +1,35 @@
+{
+  "name": "zerodhaclone",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "start": "serve -s dist -l $PORT",
+  "lint": "oxlint",
+  "preview": "vite preview",
+  "test": "vitest"
+},
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "bootstrap": "^5.3.8",
+    "jsdom": "^29.1.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.2",
+    "serve": "^14.2.6",
+    "vitest": "^5.0.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.4",
+    "jest": "^30.5.1",
+    "oxlint": "^1.75.0",
+    "vite": "^8.2.0"
+  }
+}
