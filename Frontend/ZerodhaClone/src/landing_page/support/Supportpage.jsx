@@ -5,7 +5,7 @@ import Hero from "./Hero";
 import CreateTicket from "./Createticket";
 
 
-function SupportPage() {
+function Supportpage() {
   return (
     <div>
        <Hero />
@@ -14,4 +14,4 @@ function SupportPage() {
   );
 }
 
-export default SupportPage;
+export default Supportpage;

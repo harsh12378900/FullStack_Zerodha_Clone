@@ -4,7 +4,7 @@ import Homepage from "./landing_page/home/Homepage";
 import Signup from "./landing_page/signup/signupPage";
 import Aboutpage from "./landing_page/about/AboutPage";
 import Pricingpage from "./landing_page/pricing/PricingPage";
-import Supportpage from "./landing_page/support/SupportPage";
+import Supportpage from "./landing_page/support/Supportpage";
 import ProductPage from "./landing_page/product/Productpage";
 import LoginPage from "./landing_page/login/loginPage";
 import OpenAccount from "./landing_page/OpenAccount";
