@@ -37,7 +37,7 @@ function Login() {
 
       // Backend ko login request
       const response = await fetch(
-        "http://localhost:8080/login",
+        "https://zerodhaclone-zzzq.onrender.com/login",
         {
           method: "POST",
 
@@ -69,7 +69,7 @@ function Login() {
         alert("Login successful!");
 
         // Dashboard par redirect
-        window.location.href = "http://localhost:5173/";
+        window.location.href = "https://zerodhaclone2-6jes.onrender.com/";
 
       }
 

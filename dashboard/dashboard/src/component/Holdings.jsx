@@ -5,7 +5,7 @@ const Holdings = () => {
   const [holdings, setHoldings] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/allHoldings")
+    fetch("https://zerodhaclone-zzzq.onrender.com/allHoldings")
       .then((res) => res.json())
       .then((data) => {
         console.log("API Data:", data);

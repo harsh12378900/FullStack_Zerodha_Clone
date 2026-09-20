@@ -6,7 +6,7 @@ const Positions = () => {
   const [positions, setPositions] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/allPositions")
+    fetch("https://zerodhaclone-zzzq.onrender.com/allPositions")
       .then((res) => res.json())
       .then((data) => {
         console.log("API Data:", data);

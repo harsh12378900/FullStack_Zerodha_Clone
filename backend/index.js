@@ -39,9 +39,10 @@ app.use(
     origin: function (origin, callback) {
       const allowedOrigins = [
         "http://localhost:5173",
-        "http://localhost:5174"
+        "http://localhost:5174",
+        "https://fullstack-zerodha-clone.onrender.com",
+        "https://zerodhaclone2-6jes.onrender.com"
       ];
-
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
       } else {
@@ -291,7 +292,8 @@ app.post("/signup", async (req, res) => {
       token,
       {
         httpOnly: true,
-        secure: false,
+        secure: true,
+        sameSite: "none",
         maxAge: 60 * 60 * 1000
       }
     );
@@ -376,7 +378,8 @@ app.post("/login", async (req, res) => {
       token,
       {
         httpOnly: true,
-        secure: false,
+        secure: true,
+         sameSite: "none",      
         maxAge: 60 * 60 * 1000
       }
     );
@@ -406,7 +409,8 @@ app.post("/logout", (req, res) => {
 
   res.clearCookie("token", {
     httpOnly: true,
-    secure: false
+    secure: true,
+  sameSite: "none"
   });
 
   res.status(200).json({

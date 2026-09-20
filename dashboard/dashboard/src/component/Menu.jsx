@@ -21,7 +21,7 @@ const Menu = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/logout",
+       "https://zerodhaclone-zzzq.onrender.com/logout",
         {
           method: "POST",
           credentials: "include"
@@ -33,7 +33,7 @@ const Menu = () => {
       console.log(data);
 
       if (response.ok) {
-        window.location.href = "http://localhost:5174/login";
+        window.location.href = "https://fullstack-zerodha-clone.onrender.com/login";
       }
     } catch (error) {
       console.log("Logout Error:", error);

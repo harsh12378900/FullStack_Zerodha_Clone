@@ -42,7 +42,7 @@ function Signup() {
 
       // Backend ko signup request bhej rahe hain
       const response = await fetch(
-        "http://localhost:8080/signup",
+        "https://zerodhaclone-zzzq.onrender.com/signup",
         {
           method: "POST",
 
@@ -75,7 +75,7 @@ function Signup() {
         alert("Signup successful!");
 
         // Dashboard par redirect
-        window.location.href = "http://localhost:5173";
+        window.location.href = "https://zerodhaclone2-6jes.onrender.com"
 
       }
 

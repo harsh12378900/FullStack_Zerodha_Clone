@@ -7,7 +7,7 @@ function Orders() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/allfindOrder")
+    .get("https://zerodhaclone-zzzq.onrender.com/allfindOrder")
       .then((data) => {
         console.log("API Data:", data.data);
         setOrders(data.data);
