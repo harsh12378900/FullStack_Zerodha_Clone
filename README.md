@@ -11,10 +11,7 @@ This project demonstrates how a modern full-stack application works from fronten
 ## 🚀 Live Demo
 
 🌐 **Live Website:**  
-https://your-live-frontend-url.com
-
-🔗 **Backend API:**  
-https://your-live-backend-url.com
+https://fullstack-zerodha-clone.onrender.com/
 
 ---
 
